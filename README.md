@@ -3,12 +3,12 @@ Este projeto é parte da disciplina de JAVA e visa desenvolver uma aplicação q
 
 ## Atualizações da Primeira para a Segunda Entrega
 
-## 1. Atualização do Esquema do Projeto
-Coerência com o Banco de Dados: Realizamos uma revisão completa do esquema do projeto para assegurar que está alinhado com a estrutura do banco de dados. Isso resultou em uma melhor organização dos dados e maior eficiência nas operações de CRUD (Create, Read, Update, Delete).
+ - 1. Atualização do Esquema do Projeto
+   Coerência com o Banco de Dados: Realizamos uma revisão completa do esquema do projeto para assegurar que está alinhado com a estrutura do banco de dados. Isso resultou em uma melhor organização dos dados e maior eficiência nas operações de CRUD (Create, Read, Update, Delete).
 Melhoria na Estrutura do Projeto: Reestruturamos o projeto para refletir melhor a lógica de negócios e as relações entre as entidades, tornando o código mais legível e manutenível.
 
-## 2. Avanço na Maturidade da API
-Segunda Maturidade de API: Elevamos o projeto à segunda maturidade de API conforme o modelo de Richardson. Isso inclui a implementação de padrões RESTful mais avançados, com endpoints bem definidos e utilização adequada de verbos HTTP (GET, POST, PUT, DELETE).
+ - 2. Avanço na Maturidade da API
+   Segunda Maturidade de API: Elevamos o projeto à segunda maturidade de API conforme o modelo de Richardson. Isso inclui a implementação de padrões RESTful mais avançados, com endpoints bem definidos e utilização adequada de verbos HTTP (GET, POST, PUT, DELETE).
 
 # Formatação e Atualização: Modernizamos o formato das respostas da API para serem mais consistentes e informativas, melhorando a experiência dos desenvolvedores que irão consumir a API.
 
