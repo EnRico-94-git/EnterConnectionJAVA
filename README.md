@@ -1,5 +1,5 @@
 # EnterConnectionJAVA
-Este projeto é parte de uma disciplina da faculdade e visa desenvolver uma aplicação em Java que interage com um banco de dados, utilizando a arquitetura de API na sua segunda maturidade.
+Este projeto é parte da disciplina de JAVA e visa desenvolver uma aplicação que interage com um banco de dados, utilizando a arquitetura de API na sua segunda maturidade.
 
 ## Atualizações da Primeira para a Segunda Entrega
 
