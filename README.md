@@ -11,7 +11,7 @@ Melhoria na Estrutura do Projeto:
 Reestruturamos o projeto para refletir melhor a lógica de negócios e as relações entre as entidades, tornando o código mais legível e manutenível.
 II. Formatação e Atualização
 
-##Modernização do Formato das Respostas da API: 
+Modernização do Formato das Respostas da API: 
 Atualizamos o formato das respostas da API para serem mais consistentes e informativas, melhorando a experiência dos desenvolvedores que irão consumir a API.
 
 III. Implementação de Internacionalização (i18n)
