@@ -1,0 +1,62 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Lista de Clientes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 th:text="#{lista_clientes}">Lista de Clientes</h1>
+        </div>
+        <div class="row">
+            <a href="/cadastro_cliente" class="btn btn-primary">
+                <span th:text="#{cad_cliente}">Cadastrar Novo Cliente</span>
+            </a>
+        </div>
+        <div class="row mt-3">
+            <!-- Detalhes dos Clientes -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th th:text="#{id_cliente}">ID</th>
+                        <th th:text="#{nm_cliente}">Nome</th>
+                        <th th:text="#{email}">Email</th>
+						<th th:text="#{telefone}">Telefone</th>
+                        <th th:text="#{endereco}">Endereço</th>
+                        <th th:text="#{acoes}">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="cliente : ${clientes}">
+                        <td th:text="${cliente.idCliente}"></td>
+                        <td th:text="${cliente.nmCliente}"></td>
+                        <td th:text="${cliente.email}"></td>
+                        <td th:text="${cliente.telefone}"></td>
+                        <td th:text="${cliente.endereco}"></td>
+                        <td>
+                            <a th:href="@{/editar_cliente/{id}(id=${cliente.idCliente})}" class="btn btn-warning btn-sm">
+                                <span th:text="#{editar}">Editar</span>
+                            </a>
+                            <a th:href="@{/deletar_cliente/{id}(id=${cliente.idCliente})}" class="btn btn-danger btn-sm">
+                                <span th:text="#{deletar}">Deletar</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <a href="/"><span th:text="#{voltar_inicio}">Voltar ao Início</span></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
