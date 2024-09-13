@@ -4,9 +4,11 @@ Este projeto é parte da disciplina de JAVA e visa desenvolver uma aplicação q
 Atualizações da Segunda para a Terceira Entrega
 I. Atualização do Esquema do Projeto
 
-Coerência com o Banco de Dados: Realizamos uma revisão completa do esquema do projeto para assegurar que está alinhado com a estrutura do banco de dados. Isso resultou em uma melhor organização dos dados e maior eficiência nas operações de CRUD (Create, Read, Update, Delete).
+Coerência com o Banco de Dados: 
+Realizamos uma revisão completa do esquema do projeto para assegurar que está alinhado com a estrutura do banco de dados. Isso resultou em uma melhor organização dos dados e maior eficiência nas operações de CRUD (Create, Read, Update, Delete).
 
-Melhoria na Estrutura do Projeto: Reestruturamos o projeto para refletir melhor a lógica de negócios e as relações entre as entidades, tornando o código mais legível e manutenível.
+Melhoria na Estrutura do Projeto: 
+Reestruturamos o projeto para refletir melhor a lógica de negócios e as relações entre as entidades, tornando o código mais legível e manutenível.
 II. Formatação e Atualização
 
 ##Modernização do Formato das Respostas da API: 
