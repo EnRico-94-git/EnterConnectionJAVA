@@ -1,3 +1,10 @@
+- Eduardo Ferreira Silva de Jesus: rm98410__2TDSPN
+- Enrico do Nascimento Ferreira Galdino: rm552082__2TDSPH
+- Fabio de Oliveira Targa: rm551328__2TDSPM
+- Luis Felipe do Santos Tragl: rm99476__2TDSA
+- Vinicius Durce Carlini: rm550427__2TDSPM
+
+
 #EnterConnection
 Este projeto é desenvolvido como parte da disciplina de JAVA, com o objetivo de criar uma aplicação que interage com um banco de dados, utilizando uma arquitetura de API madura, focada em operações CRUD, internacionalização, e segurança.
 
