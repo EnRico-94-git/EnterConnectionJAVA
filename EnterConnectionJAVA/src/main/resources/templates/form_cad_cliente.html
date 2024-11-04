@@ -1,0 +1,38 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Cliente</h2>
+        <form th:object="${cliente}" th:action="@{/cliente/inserir}" method="post">
+            <div class="mb-3">
+                <label for="idCliente" class="form-label">ID do Cliente</label>
+                <input type="text" class="form-control" th:field="*{idCliente}" th:errorclass="is-invalid" required>
+                <div class="invalid-feedback" th:errors="*{idCliente}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="nmCliente" class="form-label">Nome do Cliente</label>
+                <input type="text" class="form-control" th:field="*{nmCliente}" th:errorclass="is-invalid" required>
+                <div class="invalid-feedback" th:errors="*{nmCliente}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" th:field="*{email}" th:errorclass="is-invalid" required>
+                <div class="invalid-feedback" th:errors="*{email}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" th:field="*{telefone}" th:errorclass="is-invalid" required>
+                <div class="invalid-feedback" th:errors="*{telefone}"></div>
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" th:field="*{endereco}" th:errorclass="is-invalid" required>
+                <div class="invalid-feedback" th:errors="*{endereco}"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar Cliente</button>
